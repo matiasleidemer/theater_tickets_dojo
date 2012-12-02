@@ -1,4 +1,4 @@
-class Person
+class Ticket
 
   def calculate_price
     #todo

@@ -1,4 +1,4 @@
-class Kid < Person
+class KidTicket < Ticket
 
   def price
     5.50

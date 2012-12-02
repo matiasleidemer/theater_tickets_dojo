@@ -1,38 +1,38 @@
-require 'person'
-require 'kid'
+require 'ticket'
+require 'kid_ticket'
 
-describe Kid do
+describe KidTicket do
 
-  let(:kid) { Kid.new }
+  let(:kid_ticket) { KidTicket.new }
 
   describe "discounts" do
     context "monday" do
       it "should be 10%" do
-        kid.monday_discount.should eql 0.1
+        kid_ticket.monday_discount.should eql 0.1
       end
     end
 
     context "tuesday" do
       it "should be 15%" do
-        kid.tuesday_discount.should eql 0.15
+        kid_ticket.tuesday_discount.should eql 0.15
       end
     end
 
     context "wednesday" do
       it "should be 30%" do
-        kid.wednesday_discount.should eql 0.3
+        kid_ticket.wednesday_discount.should eql 0.3
       end
     end
 
     context "thurday" do
       it "should not have any discount" do
-        kid.thursday_discount.should eql 0
+        kid_ticket.thursday_discount.should eql 0
       end
     end
 
     context "friday" do
       it "should be 11%" do
-        kid.friday_discount.should eql 0.11
+        kid_ticket.friday_discount.should eql 0.11
       end
     end
 
