@@ -36,6 +36,12 @@ describe KidTicket do
       end
     end
 
+    context "non working days" do
+      it "should not have any discount" do
+        kid_ticket.non_working_day_discount.should eql 0
+      end
+    end
+
   end
 
 end
