@@ -1,4 +1,9 @@
 class Ticket
+  #time.strftime("%A").downcase
+
+  def price
+    11.00
+  end
 
   def calculate_price
     #todo
