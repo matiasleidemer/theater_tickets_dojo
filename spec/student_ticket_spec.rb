@@ -49,6 +49,12 @@ describe StudentTicket do
       end
     end
 
+    context "student with little card" do
+      it "should receive 35% discount on workdays" do
+        pending
+      end
+    end
+
   end
 
 end
